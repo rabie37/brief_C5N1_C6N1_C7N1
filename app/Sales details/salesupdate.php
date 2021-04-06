@@ -14,6 +14,7 @@ include("../INCLUD/conection.php");
   </head>
 <body>
 <div class="topnav">
+<link rel="stylesheet" href="../style/sass/pages/petsproducts.css">
             <a class="active" href="home.html"><img src="../img/ic_add_pet.png"></a>
             <a href="sales.php">Sales details</a>
             <div class="topnav-right">
@@ -56,7 +57,7 @@ $id = $_POST["id"];
   $date= $_POST["date"];
   $total = $_POST["total"];
  
-  $Query2="select count(*) from sales_details WHERE sd_id='$id'";
+  $Query2="select count(*) from salesdetails WHERE sd_id='$id'";
   $Execute = mysqli_query($conn,$Query2);
   $count = mysqli_fetch_row($Execute);
   if($count[0]==1)
