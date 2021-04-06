@@ -1,4 +1,5 @@
 <?php
+ include("../INCLUD/conection.php");
  session_start();
  if(isset($_SESSION['user']))
 
@@ -13,7 +14,7 @@
 </head>
 <body>
 <div class="topnav">
-<a class="active" href="home.html"><img src="../img/ic_add_pet.png"></a>
+<a class="active" href="productsupdate.php"><img src="../img/ic_add_pet.png"></a>
             <a href="petsproduct.php">pets products</a>
             <div class="topnav-right">
               <a href="logout.php">logout</a>
@@ -51,17 +52,17 @@ border: 3px solid #ff0000;background-color:#f44336;color:#f2f2f2;font-size:17px;
 if(isset($_POST["submit"]))
 {
 // define variables and set to empty values
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "Petshop";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "Petshop";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
+// // Create connection
+// $conn = new mysqli($servername, $username, $password, $dbname);
+// // Check connection
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// } 
 //echo "  CONNECTION ESTABLISHED \r\n";
 //echo "  INSERTION IN PROCESS";
 $id = $_POST["id"];

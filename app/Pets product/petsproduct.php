@@ -26,7 +26,7 @@
 </head>
 <body>
 <div class="topnav">
-            <a class="active" href="home.html"><img src="../img/ic_add_pet.png"></a>
+            <a class="active" href="productsupdate.php"><img src="../img/ic_add_pet.png"></a>
             <a href="petproducts.php">pets products</a>
             <div class="topnav-right">
               <a href="logout.php">logout</a>
@@ -37,7 +37,7 @@
 <button  style="height: 50px;width: 150px;cursor:pointer;border-radius:15px;
 border: 3px solid #ff0000;background-color:#f44336;color:#f2f2f2;font-size:17px;" formaction="productsadd.php">Add new product</button>
 <button  style="margin-left:900px; height: 50px;width: 150px;cursor:pointer;border-radius:15px;
-border: 3px solid #ff0000;background-color:#f44336;color:#f2f2f2;font-size:17px;" formaction="productupdate.php">update product</button>
+border: 3px solid #ff0000;background-color:#f44336;color:#f2f2f2;font-size:17px;" formaction="productsupdate.php">update product</button>
 </form>
 </div>
 
@@ -57,7 +57,7 @@ border: 3px solid #ff0000;background-color:#f44336;color:#f2f2f2;font-size:17px;
             <tr>
 
                 <td><?php echo $row['pp_id'] ?></td>
-                <td><?php echo $row['pp-name'] ?></td>
+                <td><?php echo $row['pp_name'] ?></td>
                 <td><?php echo $row['pp_type'] ?></td>
                 <td><?php echo $row['cost'] ?></td>
                 <td><?php echo $row['belongs_to'] ?></td>

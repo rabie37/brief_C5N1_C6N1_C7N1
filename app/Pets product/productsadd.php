@@ -1,4 +1,5 @@
 <?php
+ include("../INCLUD/conection.php");
  session_start();
  if(isset($_SESSION['user']))
  {
@@ -53,17 +54,7 @@ border: 3px solid #ff0000;background-color:#f44336;color:#f2f2f2;font-size:17px;
 <?php
 if(isset($_POST["submit"]))
 {
-    $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "Petshop";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
+//    
 //echo "  CONNECTION ESTABLISHED \r\n";
 //echo "  INSERTION IN PROCESS";
 $id = $_POST["id"];
