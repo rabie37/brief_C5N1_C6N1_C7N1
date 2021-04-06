@@ -40,19 +40,20 @@ session_start();
 	petshop
 </title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-    <div class="topnav">
-            <a class="active" href="login.html"><img src="ic_add_pet.png"></a>
+    <div class="nav">
+            <a class="active" href="login.html"><img src="../logo.png"></a>
              
           </div>
     <div class="login-page">
   <div class="form">
     <form class="login-form" method="POST">
       <h1>Login</h1>
-      <input type="text" name="username" placeholder="username" required/>
-      <input type="password"  name="password" placeholder="password" required/>
-      <button type="submit"  name="login" >login</button>
+      <input class="input" type="text" name="username" placeholder="username" required/><br><br>
+      <input class="input" type="password"  name="password" placeholder="password" required/><br><br>
+      <button class="login" type="submit"  name="login" >login</button>
     </form>
   </div>
 </div>

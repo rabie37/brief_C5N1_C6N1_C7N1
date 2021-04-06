@@ -45,16 +45,23 @@ if (isset($_POST["submit"])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    
     <title>Document</title>
 </head>
 <body>
-<form method="post">  
-   <input type="text" name="id" placeholder=" Enter pet_id" required >
+<div class="nav">
+    <img src="../logo.png" alt="">
+    <h1 class="title" >Animals</h1>
+    <a class="logout" href="../INCLUD/logout.php">logout</a>
+            </div>
+<form class="form" method="post">  
+   <input class="with" type="text" name="id" placeholder=" Enter pet_id" required >
     <br><br>
-   <input type="text" name="category" placeholder="Enter pet_category" required>
+   <input class="with" type="text" name="category" placeholder="Enter pet_category" required>
    <br><br>
   
-  <input type="text" name="breed"  placeholder="Enter breed" required>
+  <input class="with" type="text" name="breed"  placeholder="Enter breed" required>
   <br><br>
   <input type="number" step=any name="weight"  placeholder="Enter weight" min="1" required>
   
@@ -64,9 +71,9 @@ if (isset($_POST["submit"])) {
  
   <input type="text" name="fur"  placeholder="Enter fur" required>
   <br><br>
-  <input type="number" name="cost"  placeholder="Enter cost" min="0" required>
+  <input class="with" type="number" name="cost"  placeholder="Enter cost" min="0" required>
   <br><br>
-  <input type="submit" name="submit" value="save">
+  <input class="save" type="submit" name="submit" value="save">
 </form> 
 </body>
 </html>
