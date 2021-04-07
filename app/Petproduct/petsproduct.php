@@ -14,41 +14,41 @@
 <body>
 <div class="nav">
     <img src="../logo.png" alt="">
-    <h1 class="title" >Customers</h1>
+    <h1 class="title" >Product</h1>
     <a class="logout" href="../INCLUD/logout.php">logout</a>
             </div>
 
 <form class="animaly">
 <button class="add"  type="submit" formaction="../INCLUD/home.php">Back</button>
-<button class="add" formaction="customersadd.php">Add new customer</button>
+<button class="add" formaction="petsproductadd.php">Add new product</button>
 
-<button class="update" formaction="customersupdate.php">update customer</button>
+<button class="update" formaction="petsproductupdate.php">update product</button>
 </form>
 
  
       <table border="" style="border-collapse: collapse;">
             <thead class="thead">
-                <th>cs_id</th>
-                <th>cs_fname</th>
-                <th>cs_lname</th>
-                <th>cs_minit</th>
-                <th>cs_address</th>
+                <th>pp_id</th>
+                <th>cpp_name</th>
+                <th>pp_type</th>
+                <th>cast</th>
+                <th>belongs_to</th>
             </thead>
             <?php 
-    $sql="SELECT * FROM customer";
+    $sql="SELECT * FROM products";
     foreach ($conn->query($sql) as $row) : ?>
             <tr>
                 
-                <td><?php echo $row['cs_id'] ?></td>
-                <td><?php echo $row['cs_fname'] ?></td>
-                <td><?php echo $row['cs_lname'] ?></td>
-                <td><?php echo $row['cs_minit'] ?></td>
-                <td><?php echo $row['cs_address'] ?></td>
+                <td><?php echo $row['pp_id'] ?></td>
+                <td><?php echo $row['pp_name'] ?></td>
+                <td><?php echo $row['pp_type'] ?></td>
+                <td><?php echo $row['cost'] ?></td>
+                <td><?php echo $row['belongs_to'] ?></td>
             </tr>
             <?php endforeach; ?>
         </table>
     
-        <form class="bot" action="customersdelet.php" method="post">
+        <form class="bot" action="petsproductdelet.php" method="post">
     <input class="input" type="text" name="id" placeholder="Enter the id to delete" required>
     <input class="delete" type="submit" class="delete" name="submit" value="Delete">
 

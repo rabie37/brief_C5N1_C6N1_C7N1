@@ -19,6 +19,7 @@
             </div>
 
 <form class="animaly">
+<button class="add"  type="submit" formaction="../INCLUD/home.php">Back</button>
 <button class="add" formaction="animalsadd.php">Add new animal</button>
 
 <button class="update" formaction="animalsupdate.php">update animal</button>

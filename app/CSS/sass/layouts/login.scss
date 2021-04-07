@@ -1,0 +1,20 @@
+.login-page {
+    box-shadow: 0 1px 20px 0 #455a645e;
+    width: 30%;
+    margin: 6% auto;
+    padding: 2% 0;
+    input.input {
+        width: 70%;
+        height: 30px;
+        margin: 3% 12%;
+    }
+    h1 {
+        text-align: center;
+    }
+    button.login {
+        margin: 2% 12%;
+        border: none;
+        padding: 2% 7%;
+        background: linear-gradient(to right, #0ac282, #0df3a3);
+    }
+}
