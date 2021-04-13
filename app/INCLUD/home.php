@@ -1,3 +1,11 @@
+<?php 
+session_start();
+
+include("conection.php");
+include("functions.php");
+
+	$data = check_login($conn);
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -49,6 +49,10 @@ if (isset($_POST["submit"])) {
     <h1 class="title" >Birds</h1>
     <a class="logout" href="../INCLUD/logout.php">logout</a>
             </div>
+            <form class="animaly">
+<button class="add"  type="submit" formaction="customers.php">Back</button>
+ 
+</form>
 
 <form class="form" method="post">  
    

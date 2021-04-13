@@ -45,9 +45,13 @@ if (isset($_POST["submit"])) {
 <body>
 <div class="nav">
     <img src="../logo.png" alt="">
-    <h1 class="title" >Birds</h1>
+    <h1 class="title" >Product</h1>
     <a class="logout" href="../INCLUD/logout.php">logout</a>
             </div>
+            <form class="animaly">
+<button class="add"  type="submit" formaction="petsproduct.php">Back</button>
+ 
+</form>
 
 <form class="form" method="post">  
    

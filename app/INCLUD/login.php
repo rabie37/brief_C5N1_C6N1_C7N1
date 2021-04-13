@@ -11,24 +11,24 @@ session_start();
     $password = $_POST['password'];
     // check for empty data
     if(empty($username) || empty($password)){
-      echo "<script>alert('Email or password is empty!');</script>";
+      echo "<script>alert('username or password is empty!');</script>";
       die();
     }
   
 
     $sql = $conn->prepare("SELECT * FROM login WHERE username = :username");
-    $sql->bindParam(":username",$username,PDO::PARAM_STR);
+    $sql->bindParam(":username",$username);
     if($sql->execute()){
       $result= $sql->fetchAll(PDO::FETCH_OBJ);
-      header("location: home.php");
+    
       if(count($result) == 0){
-        echo "user not found!";
-        die;
+        echo "<script>alert('user not found!');</script>";
+        
+      }else{
+        header("location: home.php");
       }
       }
-   else{
-        echo "<script>alert('password is incorrect!');</script>";
-      }
+    
     }
  
 
